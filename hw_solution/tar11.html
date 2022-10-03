@@ -15,10 +15,12 @@
         
         function buttonClick() {
             x = parseInt(document.getElementById('id_num1').value)
+            num_of_digits = 1
             while (x >= 10) {
                 x = Math.floor(x / 10)
+                num_of_digits++
             }
-            document.write(`the most left digit is ${x}`)
+            document.write(`the number of digits is ${num_of_digits}`)
         }
         
     </script>
