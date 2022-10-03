@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>loops</title>
+</head>
+<body>
+    <hr>
+    <script>
+        
+        // if grade is -1 exit
+        // if grade > 100 then ignore and continue
+
+        mone = 0
+        sum = 0
+        
+        while (true) {
+            grade = parseInt(prompt('Enter a grade: [enter -1 to exit]'))
+            if (grade == -1) {
+                break; // will go to line 27
+            }
+            if (grade > 100) {
+                continue; // will go to line 17
+            }
+            mone++
+            sum += grade
+        }
+        avg = sum / mone
+        document.write(`for ${mone} grades: the average was: ${avg}`)
+        
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
