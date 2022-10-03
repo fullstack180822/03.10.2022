@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>loops</title>
+</head>
+<body>
+    <hr>
+    <p>Shalem <input id="id_shalem" type="number" /></p>
+    <p>Sifra (x) <input id="id_x" type="number" /></p>
+
+    <p>click here : <button type="button" onclick="buttonClick()">
+        Click me!</button></p>
+    <br />
+
+    <script>
+        
+        function buttonClick() {
+            shalem = parseInt(document.getElementById('id_shalem').value)
+            x = parseInt(document.getElementById('id_x').value)
+
+            mone = (shalem == 0 && x == 0) ? 1 : 0;
+            while (shalem > 0) {
+                mone = mone + (shalem % 10 == x) ? 1 : 0;
+                shalem = Math.floor(shalem / 10)
+            }
+
+            document.write(`${x} appears ${mone} times`)
+        }
+        
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
