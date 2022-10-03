@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>loops</title>
+</head>
+
+<body>
+    <hr>
+    <script>
+
+
+        // prompt number from the user 
+        // print stars '*' * number
+        // example: 3
+        // *    (1)
+        // **   (2)
+        // ***  (3)
+        // example: 5
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
+        // 5
+        // 12345
+
+
+        // input stars until got 0
+        n = parseInt(prompt('Enter number: [0 to exit]'))
+        while (n != 0) {
+
+            while (n > 10) {
+                n = Math.floor(n / 10)
+            }
+            document.write(n)
+            n = parseInt(prompt('Enter number: [0 to exit]'))
+        }
+
+        document.write('finished!')
+
+        // from line 24
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
