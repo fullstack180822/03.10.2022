@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>loops</title>
+</head>
+
+<body>
+    <hr>
+    <script>
+
+
+        // prompt number from the user 
+        // print stars '*' * number
+        // example: 3
+        // ***
+        // example: 5
+        // *****
+
+        // input stars until got 0
+        stars = parseInt(prompt('Enter number of stars: [0 to exit]'))
+        while (stars != 0) {
+
+            while (true) {
+                document.write(`*`)
+                stars--;
+                if (stars == 0) {
+                    await sleep(3000);
+                    break
+                }
+            }
+
+            stars = parseInt(prompt('Enter number of stars: [0 to exit]'))
+        }
+
+        document.write('finished!')
+
+        // from line 24
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
